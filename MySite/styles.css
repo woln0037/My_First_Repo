@@ -1,0 +1,199 @@
+/*this is a comment*/
+/*--------------Define Global Css--------------*/
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: #000000;
+    line-height: 1.5;
+    margin: 0;
+}
+
+/*--------------Define Default Global Font Size--------------*/
+
+h1 {
+    font-size: 48px;
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: 400;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+h4 {
+    font-size: 18px;
+}
+
+h5 {
+    font-size: 16px;
+}
+
+p {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+/*font-size defaults to 16px*/
+/*people don't always use underlines on links, use underline if with other non-underlined content*/
+/*by default links ALWAYS have an underline and are bright blue/purple*/
+
+a {
+    font-size: 16px;
+    font-weight: 400;
+    color: #000000;
+    text-decoration: none;
+}
+
+/*how to get underline to disappear or show*/
+
+a:hover {
+    text-decoration: underline;
+}
+
+/*--------------Define Global Helper Style--------------*/
+
+.font-regular {
+    font-weight: 400;
+}
+
+.center {
+    text-align: center;
+}
+
+/* default margin was 24*/
+
+.margin-bottom_five {
+    margin-bottom: 5px;
+}
+
+.link {
+    text-decoration: underline;
+}
+
+/*this is an ACTION for the LINK class not a new class*/
+.link:hover {
+    text-decoration: none;
+}
+
+.link-no_underline {
+    text-decoration: none;
+}
+
+.link-no_underline:hover {
+    text-decoration: none;
+}
+
+/*if you are using zero as a measurement you JUST write 0*/
+.margin-top_zero {
+    margin-top: 0;
+}
+
+
+/*--------------Define Navigation Styles--------------*/
+
+/*!!!!Liz ask how to define the height of the nav!!!!*/
+/*if we didn't define the background color, it would be transparent*/
+nav {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: row wrap;
+    justify-content: flex-end;
+    /*this right-aligns it*/
+    padding-right: 20px;
+    position: sticky;
+    top: 0;
+}
+
+/*if you say JUST padding or JUST margin it will put equal amount around the whole thing*/
+.nav-link {
+    display: flex;
+    padding: 20px;
+}
+
+/*--------------Define Hero Styles--------------*/
+
+.hero-container {
+    background-color: #C3C8B9;
+    display: flex;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+/*40% 60% is good ratio for image/text in hero*/
+
+.hero-container_img {
+    width: 40%;
+}
+
+/*look for this class THEN look for the image inside - won't target ALL images*/
+.hero-container_img img {
+    width: 100%;
+    /*removing white space from below my hero image*/
+    display: block;
+}
+
+/*padding can be in pixels or percents, percents are more fluid*/
+.hero_container-copy {
+    width: 60%;
+    padding: 5%;
+}
+
+.hero-container_sub-copy {
+    font-weight: 400;
+}
+
+.card {
+    height: 657px;
+    width: 448px;
+    border: 0;
+    padding-left: 58px;
+    padding-right: 58px;
+}
+
+.card-text {
+    width:341px;
+}
+/*--------------Define Footer Styles--------------*/
+.footer-container {
+    background-color: #C3C8B9;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.footer-h2 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #62645E;
+}
+
+.footer-copy {
+    font-size: 24px;
+    font-style: italic;
+}
+
+/*--------------Define Button Styles--------------*/
+/*had to add a white border so there wouldn't be "jumping" when I added the hover feature*/
+button {
+    border: solid;
+    border-radius: 25px;
+    background-color: #62645E;
+    color: #fff;
+    padding: 15px 59px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    /*what does this mean?*/
+    cursor: pointer;
+}
+
+button:hover {
+    border: solid;
+    color: #62645E;
+    background-color: #fff;
+}
