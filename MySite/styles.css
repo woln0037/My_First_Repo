@@ -11,20 +11,21 @@ body {
 /*--------------Define Default Global Font Size--------------*/
 
 h1 {
-    font-size: 48px;
+    font-size: 40px;
 }
 
 h2 {
-    font-size: 24px;
+    font-size: 18px;
     font-weight: 400;
 }
 
 h3 {
-    font-size: 24px;
+    font-size: 18px;
 }
 
 h4 {
-    font-size: 18px;
+    font-size: 16px;
+    font-weight: 700;
 }
 
 h5 {
@@ -55,19 +56,12 @@ a:hover {
 
 /*--------------Define Global Helper Style--------------*/
 
-.font-regular {
-    font-weight: 400;
-}
-
 .center {
     text-align: center;
 }
 
 /* default margin was 24*/
 
-.margin-bottom_five {
-    margin-bottom: 5px;
-}
 
 .link {
     text-decoration: underline;
@@ -78,23 +72,15 @@ a:hover {
     text-decoration: none;
 }
 
-.link-no_underline {
-    text-decoration: none;
+.font-increase {
+font-size: 24px;
 }
-
-.link-no_underline:hover {
-    text-decoration: none;
-}
-
 /*if you are using zero as a measurement you JUST write 0*/
-.margin-top_zero {
-    margin-top: 0;
-}
+
 
 
 /*--------------Define Navigation Styles--------------*/
 
-/*!!!!Liz ask how to define the height of the nav!!!!*/
 /*if we didn't define the background color, it would be transparent*/
 nav {
     background-color: #ffffff;
@@ -119,20 +105,26 @@ nav {
     background-color: #C3C8B9;
     display: flex;
     align-items: center;
-    margin-bottom: 60px;
+    margin-bottom: 40px;
 }
 
 /*40% 60% is good ratio for image/text in hero*/
 
 .hero-container_img {
     width: 40%;
+    display: flex;
+flex-direction: column;
+justify-content: flex-end;
+align-items: flex-end;
+   /*removing white space from below my hero image
+    display: block; <- don't use will break flex
+    vertical-align: bottom;*/
 }
 
 /*look for this class THEN look for the image inside - won't target ALL images*/
 .hero-container_img img {
     width: 100%;
-    /*removing white space from below my hero image*/
-    display: block;
+ 
 }
 
 /*padding can be in pixels or percents, percents are more fluid*/
@@ -145,55 +137,159 @@ nav {
     font-weight: 400;
 }
 
-.card {
-    height: 657px;
-    width: 448px;
-    border: 0;
-    padding-left: 58px;
-    padding-right: 58px;
-}
+/*-------------Define Card Styles---------------*/
 
-.card-text {
-    width:341px;
-}
-/*--------------Define Footer Styles--------------*/
-.footer-container {
-    background-color: #C3C8B9;
-    padding-bottom: 20px;
-    padding-top: 20px;
-    text-align: center;
-}
-
-.footer-h2 {
-    font-size: 24px;
+.bold {
     font-weight: 700;
-    color: #62645E;
 }
 
-.footer-copy {
-    font-size: 24px;
-    font-style: italic;
+.card-container {
+    background-color: #fff;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content:center;
+    margin-left: auto;
+  margin-right: auto;
+    /* can take out later but this will help cards not spread as much*/
+    max-width: 1600px;
 }
+
+.card {
+    background-color: #fff;
+    width: 25%;
+    margin: 40px;
+
+}
+
+.card img {
+    width: 100%;
+}
+
+.card a:hover {
+    text-decoration: none;
+}
+
+.card-copy {
+    text-align: center;
+    padding: 0 0 20px 0;
+}
+
+.padding {
+    padding-bottom: 20px;
+}
+/*sometimes things don't do what you need them to, in some code she will write !important which will be at the end of the string before semi-colon doesn't work in html*/
 
 /*--------------Define Button Styles--------------*/
-/*had to add a white border so there wouldn't be "jumping" when I added the hover feature*/
-button {
-    border: solid;
-    border-radius: 25px;
+
+.button {
     background-color: #62645E;
+    border-radius: 25px;
     color: #fff;
-    padding: 15px 59px;
-    text-align: center;
     text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    /*what does this mean?*/
+    padding: 13px 20px;
     cursor: pointer;
+    white-space: nowrap;
 }
 
-button:hover {
+.button:hover {
     border: solid;
     color: #62645E;
     background-color: #fff;
+}
+
+
+/*--------------Define Footer Styles--------------*/
+.footer-container {
+    background-color: #C3C8B9;
+    padding: 29px;
+    text-align: center;
+}
+
+.footer-container a:hover {
+    text-decoration: none;
+}
+
+.footer-h2 {
+    font-size: 18px;
+    font-weight: 700;
+    color: #000;
+}
+
+.footer-copy {
+    font-size: 16px;
+    font-style: italic;
+}
+
+.footer-img {
+  padding: 6px;
+  width: 36px;
+}
+.copyright {
+    font-size: 10px;
+    margin: 16px 16px 19px 16px;
+}
+
+
+
+/*--------------Define Media Queries-------------*/
+/* look into rim or responsive fonts*/
+/* on small devices she usually does min width 100%, bigger is often max*/
+
+@media screen and (max-width: 1024px) {
+
+    p {
+        font-size: 14px;
+    }
+
+    .hero-container_img {
+        width: 50%;
+    }
+
+    .hero-container_copy {
+        width: 50%;
+    }
+
+    .card {
+            width: 50%
+        }
+
+    .card img {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    nav {
+        margin-right: 0;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    .hero-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .hero-container_img {
+        min-width: 100%;
+    }
+
+    .hero-container_copy {
+        min-width: 100%;
+        margin: 20px;
+        padding: 0;
+        text-align: center;
+    }
+      .card {
+            width: 100%
+        }
+.card img {
+        width: 100%;
+    }
 }
