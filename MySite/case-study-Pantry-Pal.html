@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+
+<html>
+<!--Header-->
+<header>
+    <!--Link to Call in Google Font-->
+    <!--My font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--Link to Call in Css File-->
+    <link rel="stylesheet" href="styles.css" />
+    <!--Favicon 16px x 16px-->
+    <link rel="icon" type="image/x-icon" href="Images/favicon.png" />
+    <!--Site Name-->
+    <title> Elizabeth Wolner Portfolio Site </title>
+
+</header>
+<!--Content-->
+
+<body>
+    <!--Navigation-->
+    <nav>
+        <!--Nav Item 1 (what is in the white will display (ex. Work))-->
+        <div class="nav-link">
+            <a href="">Home</a>
+        </div>
+
+        <!--Nav Item 2-->
+        <div class="nav-link">
+            <a href="">About</a>
+        </div>
+
+        <!--Nav Item 3-->
+        <div class="nav-link">
+            <a href="">Resume</a>
+        </div>
+
+        <!--Nav Item 4-->
+        <div class="nav-link">
+            <a href="">Contact</a>
+        </div>
+    </nav>
+
+    <!--Case Study Summary Section-->
+    <section>
+        <h1 class="center">Pantry Pal Mobile App Design</h1>
+
+        <div class="landing-container landing_container-copy-full">
+            <p>We discovered that people don't like to waste food, and they sometimes lose track of what they have &
+                need.
+                We believe that there is an opportunity to help our users upgrade their paper grocery lists into a
+                digitized version that gives detailed information on items that they buy.
+            </p>
+        </div>
+
+    </section>
+
+    <!--CFIA Research Section-->
+    <section>
+
+        <h2 class="bold center">Research</h2>
+
+        <p class="side-margin">To start off, we created a user interview consisting of 17 questions. We interviewed 5
+            users and were focusing on 2 key objectives. The below shows the objectives and some key quotes from each:
+            <br>
+            <br>
+            <strong>Objective 1 -</strong> Understand the grocery planning process
+            <br>
+            <br>
+            “I tend to shop as needed. I keep a list. I [go] once or twice or twice a week, I guess. Just to pick up
+            fresh. I pick up meats and those things that keep longer and don't buy that every time because I'm able to
+            buy some and then freeze some.”
+            <br>
+            <br>
+            “I try to use what's left in my fridge or pantry first. And then if I don't have anything then I just try to
+            find a really cool recipe”
+            <br>
+            <br>
+            <strong>Objective 2 -</strong> Understand the user’s approach to food organization
+            <br>
+            <br>
+            “So I [try] to keep the open items in front of on top of the closed items. Sometimes that even doesn't
+            work.”
+            <br>
+            <br>
+            “The berries mold at times. I'm sad to see that.”
+            <br>
+            <br>
+            Next, we put out a survey which yielded 45 responses. The two most insightful responses were the following:
+            <br>
+            <br>
+            1. What type of grocery prep do you do?
+        </p>
+        <div class="landing-container_img"><img class="side-margin" src="images/survey-result-1.png"></div>
+        <p class="side-margin">
+            2. Do you use anything to help you grocery plan?
+        </p>
+        <div class="landing-container_img"><img class="side-margin" src="images/survey-result-2.png"></div>
+        <div class="landing-container">
+            <!--Text Info-->
+            <div class="landing_container-copy-half center">
+
+                <br>
+                <!--Image-->
+                <!--To call in width and height do "width"x"height"-->
+                <div class="small-image">
+                    <img src="images/pantry-pal-persona.png"
+                        alt="man hiking with golden retreiver in his hiking backpack">
+                </div>
+                <p><strong>Name: </strong> Britney</p>
+                <p><strong>Age: </strong> 32</p>
+                <p><strong>Occupation: </strong> Graphic Designer</p>
+                <p><strong>Relationship Status: </strong> Married</p>
+                <p><strong>Family: </strong> 2 kids</p>
+
+            </div>
+
+            <div class="landing_container-copy-half">
+
+                <p><strong>Gains:</strong></p>
+                <ul class="normal">
+                    <li>Waste less food</li>
+                    <li>Create a master list</li>
+                    <li>Visibility to which products are running low</li>
+                    <li>Share list with household</li>
+                    <il>Organize groceries by category/department</il>
+                </ul>
+                <p><strong>Pains:</strong></p>
+                <ul class="normal">
+                    <li>Does not like multiple trips to the store</li>
+                    <li>Stressful not knowing what ingredients are on hand</li>
+                    <li>Food gets hidden in fridge</li>
+                    <li>Grocery shopping can be overwhelming</li>
+                </ul>
+            </div>
+    </section>
+
+
+    <!--Case Study Summary Section-->
+    <section class="background-color">
+        <h2 class="center bold">Definition &amp; Ideation</h2>
+        <div class="background-color side-margin">
+            <h3>Feature Prioritization</h3>
+            <ul class="normal">
+                <li>Create Shopping List
+                </li>
+                <li>Expiration Date Alerts
+
+                </li>
+                <li>Shareable app/list with Household
+                </li>
+                <li>Live update/alert when something is added by household
+                </li>
+            </ul>
+            <br>
+            <h3>Journey Map</h3>
+            <div class="landing-container_img-full"><img src="images/pantry-pal-journey-map.jpg"
+                    alt="man hiking with golden retreiver in his hiking backpack">
+            </div>
+            <ol class="normal">
+                <li>Notification -
+                    Milk Expired!
+                </li>
+                <li>Did not purchase with weekly groceries
+                </li>
+                <li>PantryPal can automatically add to new list
+                </li>
+                <li>Husband adds additional item to list while at store
+                </li>
+                <li>Able to grab both items before check out
+                </li>
+                <li>Still gets home on time with ingredients for dinner
+                </li>
+                <li>PantryPal’s features saved the evening!
+                </li>
+            </ol>
+            <br>
+            <br>
+            <!--Card Container-->
+            <h3>Storyboard</h3>
+            <div class="card-container background-color">
+                <!--Card 1-->
+                <div class="card background-color">
+                    <p class="center bold">1. Milk is expired, oh no!</p>
+                    <img src="images/story-1.jpg" alt="woman with back turned holds a flowing Canadian flag behind her">
+                    <div class="card-copy">
+
+                        <p class="padding"> At a meeting with a client, Britney gets a notification that her milk is
+                            expired & has the horrible realization that she forgot to buy milk during her weekly trip!
+                        </p>
+                    </div>
+
+                </div>
+                <!--Card 2-->
+                <div class="card background-color">
+                    <p class="center bold">2. PantryPal to the rescue!</p>
+                    <img src="images/story-2.jpg" alt="woman with back turned holds a flowing Canadian flag behind her">
+                    <div class="card-copy">
+
+                        <p class="padding"> PantryPal asks if she'd like to add Milk to her grocery list, and Britney
+                            accepts.
+                        </p>
+                    </div>
+
+                </div>
+                <!--Card 3-->
+                <div class="card background-color">
+                    <p class="center bold">3. Ready to go.</p>
+                    <img src="images/story-3.jpg" alt="woman with back turned holds a flowing Canadian flag behind her">
+                    <div class="card-copy">
+
+                        <p class="padding"> She gets to the store to grab the milk and is ready to check out.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <!--Card 4-->
+                <div class="card background-color">
+                    <p class="center bold">4. A surprise item is added!</p>
+                    <img src="images/story-4.jpg" alt="woman with back turned holds a flowing Canadian flag behind her">
+                    <div class="card-copy">
+
+                        <p class="padding">She gets a notification that her husband also added butter to the list and is
+                            relieved she can grab it before she checked out.
+                        </p>
+                    </div>
+
+                </div>
+                <!--Card 5-->
+                <div class="card background-color">
+                    <p class="center bold">5. Home on time!</p>
+                    <img src="images/story-5.jpg" alt="woman with back turned holds a flowing Canadian flag behind her">
+                    <div class="card-copy">
+
+                        <p class="padding"> Britney is able to get home with dinner on the table before 7:00.
+                        </p>
+                    </div>
+
+                </div>
+                <!--Card 6-->
+                <div class="card background-color">
+                    <p class="center bold">6. PantryPal is a success!</p>
+                    <img src="images/story-6.jpg" alt="woman with back turned holds a flowing Canadian flag behind her">
+                    <div class="card-copy">
+
+                        <p class="padding"> The kids get to bed on time and Britney is thrilled that PantryPal saved
+                            their evening!
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+            <div class="background-color"></div>
+        </div>
+    </section>
+
+    <!--CFIA Research Section-->
+    <section>
+
+        <h2 class="bold center">Prototyping</h2>
+        <h3 class="side-margin">Initial User Flow</h3>
+        <br>
+        <br>
+        <div class="landing-container_img-full"><img src="images/user-flow.jpg" alt=""></div>
+        <h3 class="side-margin">Sketches &amp; Group Collaboration</h3>
+        <br>
+        <br>
+        <div class="landing-container_img-full"><img src="images/pantry-pal-group-collaboration-images.jpg" alt="">
+        </div>
+        <br>
+        <br>
+        <br>
+    </section>
+
+    <!--Case Study Summary Section-->
+    <section class="background-color">
+        <div class="landing-container-copy-full side-margin">
+            <h2 class="center bold  ">Testing &amp; Iterating</h2>
+            <br>
+            <h3 class="side-margin">Testing Plan:</h3>
+            <div class="landing-container background-color">
+
+                <p class="background-color margin-zero"><strong>Objective</strong>
+                    <br>
+                    1. Can users successfully add items to their grocery list and how easily?
+                    <br>
+                    2. Do users find the expiration feature valuable?
+                    <br>
+                    3. Do users find the share feature valuable?
+                </p>
+            </div>
+        </div>
+        <div class="card-container background-color">
+            <!--Card 1-->
+            <div class="card background-color">
+                <p class="center bold">User 1</p>
+                <div class="card-copy">
+
+                    <p class="padding"> “Really like it - the expiration feature is cool - like the search opt - like
+                        very clean layout, like that it’s a running list”
+
+                    </p>
+                </div>
+
+            </div>
+            <!--Card 2-->
+            <div class="card background-color">
+                <p class="center bold">User 2</p>
+                <div class="card-copy">
+
+                    <p class="padding"> “It’s a good thing. You have to spend time uploading the items. But after that
+                        it’s pretty simple to navigate. Likes the expiration date feature.”
+
+
+                    </p>
+                </div>
+
+            </div>
+            <!--Card 3-->
+            <div class="card background-color">
+                <p class="center bold">User 3</p>
+                <div class="card-copy">
+
+                    <p class="padding"> “ It’s good - is there a way to make your own categories? Or is it built-in
+                        ones.”
+
+
+                    </p>
+                </div>
+
+            </div>
+            <div class="landing-container-copy-full side-margin">
+                <h3 class="side-margin">Take Aways &amp; Prototype Iteration:</h3>
+                <p class="side-margin">Overall, users thought the prototype was straightforward and easy to use. Users felt that "List" was
+                    ambiguous, so we switched the wording to "Grocery List"</p>
+                    <br>
+                    <br>
+                    <br>
+                <h3 class="side-margin">Updated User Flow:</h3>
+                
+                <p class="side-margin">Grocery List Interactions:</p>
+                <br>
+                <div class="landing-container_img-full">
+                    <img src="images/pantry-pal-updated-user-flow.jpg">
+                </div>
+                <br>
+                <h3 class="side-margin">Final Digital Prototype:</h3>
+                
+                <br>
+                <div class="landing-container_img-full">
+                    <img src="images/pantry-pal-final-prototype.jpg">
+                </div>
+            </div>
+            <div class="background-color"></div>
+
+    </section>
+
+
+    <!--Case Study Summary Section-->
+    <section>
+        <h2 class="center bold">Final Thoughts</h2>
+
+        <div class="landing-container landing_container-copy-full">
+            <p>1. Focus on the Key Features
+                <br>
+                2. Collaboration and Compromise is Key
+                <br>
+                3. Brainstorming set us up for Success
+            </p>
+        </div>
+
+    </section>
+
+    <!--Footer-->
+    <footer class="footer-container">
+        <!--Contact-->
+        <h2 class="margin-bottom_five footer-h2">Let's get in touch!</h2>
+        <p class="footer-copy">There are no bounds to what we can achieve by working together.</p>
+        <a href="https://www.linkedin.com/in/elizabeth-wolner-6ba66255/" target="blank"> <img class="footer-img"
+                src="https://user-images.githubusercontent.com/104800887/196321274-f9b04d84-5353-4154-afd1-50f6545ea74f.png"
+                alt="black LinkedIn logo">
+        </a>
+        <a href="mailto:elizabeth.wolner@gmail.com" target="blank"><img class="footer-img"
+                src="https://user-images.githubusercontent.com/104800887/196321268-4acf4a18-4aee-47cb-9a3c-d703c5a108d1.png"
+                alt="black outline envelope">
+        </a>
+
+        <!--if you want a phone number, code: <a href="tel:612-940-3488">[Phone Icon]</a>-->
+
+        <!--Copyright !!!!UPDATE COPYRIGHT EVERY YEAR!!!!-->
+        <p class="copyright">&copy; 2022 Elizabeth Wolner. All Rights Reserved.</p>
+    </footer>
+
+</body>
+
+</html>
